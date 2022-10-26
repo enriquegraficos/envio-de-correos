@@ -1,12 +1,23 @@
 .container-form{
-    background-color: white;
-    display: grid;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
     gap:20px;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    min-width: 300;
+    max-width: 580px;
+    /* grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto)); */
     justify-content: center;
-    align-items: center;
-    margin: auto 30px auto 30px auto;
+    /* align-items: center; */
+    /* margin: auto 30px auto 30px auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.28);
+-webkit-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.28);
+-moz-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.28);
 }
 
 .container-form .title-container{
@@ -15,10 +26,11 @@
 .container-form .title{
     font-size: 18px;
     font-weight: 500;
+  
 }
 .container-item{
     height: 50px;
-    max-width: 318px;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid #E5E5E5;
     
@@ -30,7 +42,7 @@
   }
 
 .container-form .enviar{
-    background-color: #E24429;
+    background-color: #E26868;
     height: 50px;
     width: 118px;
     border: 0px;
@@ -39,12 +51,32 @@
     font-size: 16px;
 }
 
+.container-form .enviar:hover{
+    background-color: #FF8787;
+}
 .container-form .resetear{
-    background-color: #E5E5E5;
+    background-color: #FF8787;
     height: 50px;
     width: 118px;
     border: 0px;
     border-radius: 10px;
-    color: #666666;
+    color: #fff;
     font-size: 16px;
+}
+
+.container-form .resetear:hover{
+    background-color:#E26868 ;
+}
+
+.error-text{
+    color: red;
+    margin: 0px;
+}
+
+.simbol{
+    color: red;
+}
+
+.opacity{
+    opacity: .5;
 }

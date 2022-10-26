@@ -6,26 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envio de correos</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/app.js"></script>
-
+    
 </head>
 <body>
-
-    <section class="container-form">
+    
+    <section class="container-form" id="formulario">
         <h1 class="title-container">Formulario para enviar correos</h1>
-        <p class="title">Para</p>
-            <input type="text" id="para" class="container-para container-item">
-        <p class="title">Asunto</p>
-             <input type="text" class="container-asunto container-item">
-        <p class="title">Mensaje:</p>
-            <input type="text" class="container-mensaje container-item">
         <div>
-            <button class="enviar" id="enviar">Enviar</button>
-            <button class="resetear">Resetear form</button>
+            
+            <p class="title">Para</p>
+            <input type="text" id="email" class="container-para container-item" placeholder="Correo">
+        </div>
+        <div>
+            
+            <p class="title">Asunto</p>
+            <input type="text" id="asunto" class="container-asunto container-item" placeholder="Asunto del mail">
+        </div>
+        <div>
+            
+            <p class="title">Mensaje:</p>
+            
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="container-mensaje container-item" placeholder="Mensaje del mail">
+                
+            </textarea>
+        </div>
+        <div>
+            <button type="submit" class="enviar opacity" id="enviar" disabled>Enviar</button>
+            <button type="reset" class="resetear" >Resetear form</button>
         </div>
         
         
     </section>
-
+    
 </body>
+<script src="./js/app.js"></script>
+<script src="https://kit.fontawesome.com/c0f00ae246.js" crossorigin="anonymous"></script>
 </html>

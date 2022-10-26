@@ -3,9 +3,11 @@
 
 html{
     font-family: 'Roboto', sans-serif;
+    background: #D8D9CF;    
+
 }
 .body{
     margin: 0;
     padding: 0;
-   
+    
 }
